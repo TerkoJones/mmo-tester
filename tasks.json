@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": {
+				"isDefault": true,
+				"kind": "build"
+			},
+			"problemMatcher": [],
+			"label": "build",
+			"detail": "tsc"
+		},
+		{
+			"type": "npm",
+			"script": "test",
+			"group": "test",
+			"problemMatcher": [],
+			"label": "test",
+			"detail": "rimraf \"build\" && tsc && node ./build/test/index.js"
+		},
+		{
+			"type": "npm",
+			"script": "watch",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "watch",
+			"detail": "tsc"
+		},
+		{
+			"type": "npm",
+			"script": "clean",
+			"problemMatcher": [],
+			"label": "clean",
+			"detail": "rimraf \"build\" \"dist\""
+		}
+	]
+}
