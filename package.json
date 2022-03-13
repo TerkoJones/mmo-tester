@@ -1,8 +1,9 @@
 {
 	"name": "mmo-tester",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "dist/index.js",
 	"license": "MIT",
+	"homepage": "https://github.com/TerkoJones/mmo-tester",
 	"devDependencies": {
 		"@types/node": "^17.0.5",
 		"cross-env": "^7.0.3",

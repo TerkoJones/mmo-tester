@@ -5,4 +5,5 @@
  */
 import tester from './tester'
 export { ITesterOptions } from './tester'
+export { Test } from './test'
 export default tester;
